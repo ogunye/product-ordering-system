@@ -17,7 +17,9 @@ namespace rhotechsolution.PersistenceData.Repositories
 
         public void CreateProduct(Product product)
         {
-            throw new NotImplementedException();
+            return await FindAll(trackChanges)
+                .OrderBy(x => x.Id)
+                .ToListAsync();
         }
 
         public Task<IEnumerable<Product>> GetAllProductsAsync(bool trackChanges)
@@ -35,9 +37,5 @@ namespace rhotechsolution.PersistenceData.Repositories
             throw new NotImplementedException();
         }
 
-        public void UpdateProduct(Product product)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
