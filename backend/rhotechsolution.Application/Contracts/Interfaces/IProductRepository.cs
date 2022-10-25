@@ -11,8 +11,9 @@ namespace rhotechsolution.Application.Contracts.Interfaces
     {
         Task<IEnumerable<Product>> GetAllProductsAsync(bool trackChanges);
         Task<Product> GetByIdAsync(int id, bool trackChanges);
-        void CreateProduct(Product product);
-        void UpdateProduct(Product product);
-        Task<Product> GetProductBarCode(string productBarCode, bool trackChanges);
+          
+        void CreateProduct(Product product);       
+        void DeleteProduct(Product product);
+        Task<Product> GetProductByName(string productName, bool trackChanges);
     }
 }
