@@ -27,10 +27,6 @@ namespace rhotechsolution.PersistenceData.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<Product> GetByIdAsync(int id, bool trackChanges)
-        {
-            throw new NotImplementedException();
-        }
 
         public Task<Product> GetProductBarCode(string productBarCode, bool trackChanges)
         {

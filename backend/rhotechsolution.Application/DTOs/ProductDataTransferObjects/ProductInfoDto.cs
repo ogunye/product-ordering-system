@@ -10,7 +10,6 @@ namespace rhotechsolution.Application.DTOs.ProductDataTransferObjects
 {
     public class ProductInfoDto
     {
-        public int Id { get; set; }
         public string? product_name { get; set; }
         public string? product_description { get; set; }
         public string? DiscontinueDate { get; set; }
